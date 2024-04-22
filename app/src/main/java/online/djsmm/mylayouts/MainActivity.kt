@@ -28,5 +28,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        binding.linearLayoutCard.setOnClickListener {
+            val intent = Intent(this,Linear::class.java)
+            startActivity(intent)
+        }
+
     }
 }
