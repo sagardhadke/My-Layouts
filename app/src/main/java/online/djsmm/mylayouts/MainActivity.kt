@@ -2,6 +2,7 @@ package online.djsmm.mylayouts
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.ContactsContract.CommonDataKinds.Relation
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -30,6 +31,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.linearLayoutCard.setOnClickListener {
             val intent = Intent(this,Linear::class.java)
+            startActivity(intent)
+        }
+
+        binding.relativeLayoutCard.setOnClickListener {
+            val intent = Intent(this,relative::class.java)
             startActivity(intent)
         }
 
